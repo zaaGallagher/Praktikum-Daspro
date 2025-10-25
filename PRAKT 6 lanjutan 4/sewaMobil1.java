@@ -5,7 +5,7 @@ public class sewaMobil1 {
         
         Scanner input = new Scanner(System.in);
 
-        // Input dari pengguna
+        // Input 
         System.out.print("Masukkan lama sewa (hari): ");
         int lamaSewa = input.nextInt();
         System.out.print("Masukkan jarak tempuh (km): ");
