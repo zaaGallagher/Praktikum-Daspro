@@ -16,6 +16,7 @@ public class siakadFor17 {
         }
         if(nilai < terendah){
             terendah = nilai;
+            //modif
         }if (nilai >= 60) {
                 lulus++;
             } else {
