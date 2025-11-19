@@ -4,7 +4,6 @@ public class ArrayRataNilai17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Meminta jumlah mahasiswa dari pengguna
         System.out.print("Masukkan jumlah mahasiswa : ");
         int jumlahMhs = sc.nextInt();
 
@@ -12,13 +11,11 @@ public class ArrayRataNilai17 {
         double totalLulus = 0, totalTidakLulus = 0;
         int jumlahLulus = 0, jumlahTidakLulus = 0;
 
-        // Input nilai mahasiswa
         for (int i = 0; i < jumlahMhs; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + " : ");
             nilaiMhs[i] = sc.nextInt();
         }
-
-        // Proses perhitungan rata-rata lulus dan tidak lulus
+        
         for (int i = 0; i < jumlahMhs; i++) {
             if (nilaiMhs[i] > 70) {
                 totalLulus += nilaiMhs[i];
@@ -29,11 +26,9 @@ public class ArrayRataNilai17 {
             }
         }
 
-        // Hitung rata-rata untuk yang lulus dan tidak lulus
         double rataLulus = (jumlahLulus > 0) ? (totalLulus / jumlahLulus) : 0;
         double rataTidakLulus = (jumlahTidakLulus > 0) ? (totalTidakLulus / jumlahTidakLulus) : 0;
 
-        // Tampilkan hasil
         System.out.println();
         if (jumlahLulus > 0)
             System.out.println("Rata-rata nilai lulus = " + rataLulus);
